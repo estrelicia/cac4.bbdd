@@ -1,0 +1,70 @@
+CREATE DATABASE integrador_cac;
+
+USE integrador_cac;
+CREATE TABLE oradores (
+    id_orador INT(11),
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    mail VARCHAR(50),
+    tema VARCHAR(255),
+    fecha_alta TIMESTAMP
+    );
+ 
+ALTER TABLE oradores
+CHANGE id_orador
+id_orador INT(11) NOT NULL, AUTO_INCREMENT(id_orador);
+
+ALTER TABLE oradores
+CHANGE nombre
+nombre VARCHAR(50) NOT NULL;
+
+ALTER TABLE oradores
+CHANGE apellido
+apellido VARCHAR(50) NOT NULL;
+
+ALTER TABLE oradores
+CHANGE mail
+mail VARCHAR(50) NOT NULL;
+
+ALTER TABLE oradores
+CHANGE tema
+tema VARCHAR(255) NOT NULL;
+--
+USE integrador_cac;
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (100,'Bill','Gates','billgates@microsoft.com','Novedades del Windows 12',2023-11-13);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (101,'Ada','Lovelace','ada.lovelace@aol.com','Algoritmos recombinantes',2023-11-11);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (102,'Steve','Jobs','steve@apple.com','Mas allá del Iphone',2023-11-08);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (103,'Carolina','Britos','caro@gmail.com','Diseño Responsive sin Bootstrap',2023-11-05);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (104,'Juan','Rodriguez','juan.rodriguez@gmail.com','Diseño de APIs',2023-11-06);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (105,'Manuel','Ibañez','manuelin@gmail.com','Wordpress y Javascript',2023-11-22);
+ 
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (106,'Mariana','Alonso','mariana@gmail.com','Diseño de Aplicaciones Financieras',2023-11-02);
+ 
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (107,'Luna','Aguilar','luna@hotmail.com','Bases de Datos no relacionales',2023-11-09);
+ 
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (108,'Alejandro','Nuñez','alejo@gmail.com','PHP avanzado',2023-11-12);
+ 
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (109,'Paz','Cornú','cornu@gmail.com','Programación IOT',2023-11-25);
+
+INSERT INTO oradores (id_orador,nombre,apellido,mail,tema,fecha_alta) VALUES
+ (110,'Lorena','Paola','lorep@gmail.com','Backend y API',2023-11-21);
+ 
+
+
+
+ 
